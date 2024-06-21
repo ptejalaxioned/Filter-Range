@@ -1,33 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Slider</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link
-      rel="stylesheet"
-      media="screen"
-      href="./assets/vendor/jquery-1.8.3.min.js"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" media="screen" href="assets/css/style.css" />
-  </head>
 
-  <body>
-    <!--container start-->
-    <div class="container">
-      <!--main section start-->
-      <main></main>
-      <!--main section end-->
+<head>
+  <meta charset="utf-8" />
+  <title>Slider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" media="screen" href="./assets/vendor/jquery-1.8.3.min.js" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+ <link rel="stylesheet" media="screen" href="assets/css/style.css" />
+<!--  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+</head>
+
+<body>
+  <!--container start-->
+  <div class="container">
+    <!--main section start-->
+    <main>
+      <div class="filter">
+      <!-- <div data-role="rangeslider"> -->
+      <div class="range">
+        <div class="line"></div>
+        <input type="range" min="100" max="5000" value="1000" class="min">
+        <input type="range" min="100" max="5000" value="5000" class="max">
+      </div>
+        <div class="range-down">
+          <span class="filter-word">FILTER</span>
+          <div class="min-price">
+            <span class="lowest">100</span>
+            <span class="dollar">$</label>
+          </div>
+          <span class="dash">-</span>
+          <div class="max-price">
+            <span class="highest">5000</span>
+            <span class="dollar">$</label>
+          </div>
+      </div>
+      <button class="filter-button">FILTER</button>
     </div>
-    <!--container end-->
-    <script src="assets/js/script.js"></script>
-  </body>
+    <div class="shoe-list">
+      <div class="shoe">
+          <img src="./assets/images/a4xO3G-adidas-shoes-adidas-shoe-kids-superstar-daddy-grade.png" alt="Shoe 1">
+          <h2>Nike Air Max</h2>
+          <p class="price">$1500</p>
+      </div>
+      <div class="shoe">
+          <img src="./assets/images/a4xO3G-adidas-shoes-adidas-shoe-kids-superstar-daddy-grade.png" alt="Shoe 2">
+          <h2>Adidas Ultraboost</h2>
+          <p class="price">$1120</p>
+      </div>
+      <div class="shoe">
+          <img src="./assets/images/a4xO3G-adidas-shoes-adidas-shoe-kids-superstar-daddy-grade.png" alt="Shoe 3">
+          <h2>New Balance 574</h2>
+          <p class="price">$1090</p>
+      </div>
+      <div class="shoe">
+        <img src="./assets/images/a4xO3G-adidas-shoes-adidas-shoe-kids-superstar-daddy-grade.png" alt="Shoe 4">
+        <h2>Nike Air Max</h2>
+        <p class="price">$2500</p>
+      </div>
+      <div class="shoe">
+        <img src="./assets/images/a4xO3G-adidas-shoes-adidas-shoe-kids-superstar-daddy-grade.png" alt="Shoe 5">
+        <h2>Adidas Ultraboost</h2>
+        <p class="price">$4300</p>
+      </div>
+      <div class="shoe">
+        <img src="./assets/images/a4xO3G-adidas-shoes-adidas-shoe-kids-superstar-daddy-grade.png" alt="Shoe 6">
+        <h2>New Balance 574</h2>
+        <p class="price">$3500</p>
+      </div>
+      <div class="shoe">
+        <img src="./assets/images/a4xO3G-adidas-shoes-adidas-shoe-kids-superstar-daddy-grade.png" alt="Shoe 7">
+        <h2>Nike Air Max</h2>
+        <p class="price">$500</p>
+      </div>
+      <div class="shoe">
+        <img src="./assets/images/a4xO3G-adidas-shoes-adidas-shoe-kids-superstar-daddy-grade.png" alt="Shoe 8">
+        <h2>Adidas Ultraboost</h2>
+        <p class="price">$1500</p>
+      </div>
+      <div class="shoe">
+        <img src="./assets/images/a4xO3G-adidas-shoes-adidas-shoe-kids-superstar-daddy-grade.png" alt="Shoe 9">
+        <h2>New Balance 574</h2>
+        <p class="price">$4500</p>
+      </div>
+      <div class="shoe">
+        <img src="./assets/images/a4xO3G-adidas-shoes-adidas-shoe-kids-superstar-daddy-grade.png" alt="Shoe 10">
+        <h2>Nike Air Max</h2>
+        <p class="price">$3400</p>
+      </div>
+  </div>
+    </main>
+    <!--main section end-->
+  </div>
+  <!--container end-->
+  <script type="text/javascript"
+    src="./assets/vendor/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
